@@ -267,7 +267,7 @@ a {
 }
 
 .email-link {
-  font-size: clamp(1.25rem, 4vw, 1.9rem);
+  font-size: clamp(1rem, 3.8vw, 1.65rem);
   background: var(--accent-gradient);
   background-clip: text;
   -webkit-background-clip: text;
@@ -276,7 +276,7 @@ a {
   transition: all var(--transition-speed);
   display: inline-block;
   margin-top: 1rem;
-  word-break: break-word;
+  white-space: nowrap;
 }
 
 .email-link:hover {
@@ -344,6 +344,10 @@ footer {
   .scroll-indicator {
     bottom: 2.25rem;
   }
+
+  #skills .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -357,5 +361,11 @@ footer {
 
   .card h3 {
     font-size: 1.35rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #skills .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
