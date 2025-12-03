@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    base: './', // Important for GitHub Pages relative paths
+    base: '/raffaelefrancescodamato.it/', // Repository name for GitHub Pages
 })
