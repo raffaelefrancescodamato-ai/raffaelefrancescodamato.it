@@ -317,6 +317,30 @@ a {
   text-shadow: 0 0 30px rgba(0, 114, 255, 0.3);
 }
 
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: #e8f4ff;
+  font-weight: 600;
+  padding: 0.5rem 0.9rem;
+  border-radius: 12px;
+  background: rgba(0, 114, 255, 0.12);
+  border: 1px solid rgba(0, 114, 255, 0.35);
+  transition: transform var(--transition-speed), background var(--transition-speed), color var(--transition-speed);
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 114, 255, 0.22);
+  color: #fff;
+}
+
 footer {
   padding: 3rem 0;
   text-align: center;
