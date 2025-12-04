@@ -99,6 +99,14 @@ a {
   filter: drop-shadow(0 0 30px rgba(0, 240, 255, 0.4));
 }
 
+.hero-role {
+  font-size: clamp(1.05rem, 3vw, 1.35rem);
+  color: #cdeaff;
+  letter-spacing: 0.5px;
+  margin: 0;
+  font-weight: 600;
+}
+
 .hero .subtitle {
   font-size: clamp(1.05rem, 3vw, 1.35rem);
   color: #e0e0e0;
