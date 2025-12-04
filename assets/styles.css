@@ -86,6 +86,28 @@ a {
   pointer-events: auto;
 }
 
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  font-weight: 600;
+  color: #e8f4ff;
+  font-size: 0.95rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 10px;
+  transition: background var(--transition-speed), color var(--transition-speed);
+}
+
+.top-nav a:hover {
+  background: #0a1a2a;
+  color: #fff;
+}
+
 .hero h1 {
   font-size: clamp(2.4rem, 6vw, 3.8rem);
   font-weight: 700;
@@ -248,6 +270,17 @@ a {
   line-height: 1.7;
 }
 
+.section-note {
+  margin-top: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.section-note a {
+  color: #00c6ff;
+  font-weight: 700;
+}
+
 .project-logo {
   width: min(200px, 80vw);
   height: auto;
@@ -361,6 +394,10 @@ footer {
 
   .card h3 {
     font-size: 1.35rem;
+  }
+
+  .top-nav {
+    gap: 0.75rem;
   }
 }
 
