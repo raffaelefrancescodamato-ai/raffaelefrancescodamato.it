@@ -18,8 +18,8 @@
   --font-family: "Outfit", sans-serif;
   --transition-speed: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --content-width: 1100px;
-  --section-space: 8rem;
-  --section-space-sm: 5rem;
+  --section-space: 4rem;
+  --section-space-sm: 2.5rem;
   --radius-lg: 20px;
   --radius-md: 12px;
 }
@@ -294,6 +294,17 @@ h4 {
   padding: 0;
   overflow: hidden;
   gap: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card.no-image {
+  padding: 2.5rem;
+  justify-content: center;
+}
+
+.project-card.no-image .project-content {
+  padding: 0;
 }
 
 .project-image-container {
